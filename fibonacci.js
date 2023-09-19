@@ -1,8 +1,6 @@
 function getFibonacci(num) {
   if (num < 0) { return "Error: Invalid number!"; }
   if (num <= 2) { return [0, 1]; }
-
-  debugger
   
   let resultArray = getFibonacci(num - 1);
   resultArray.push(resultArray[resultArray.length - 1] + resultArray[resultArray.length - 2]);
